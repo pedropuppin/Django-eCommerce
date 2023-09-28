@@ -9,7 +9,7 @@ class OrderItemInline(admin.TabularInline):
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ('user', 'total', 'status')
+    list_display = ('id', 'user', 'total', 'status')
     list_display_links = ('user',)
     search_fields = ('id', 'user')
     list_per_page = 10
